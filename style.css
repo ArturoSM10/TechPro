@@ -1,0 +1,58 @@
+/*Variables globales*/
+:root {
+    --blanco: #FFF;
+    --gris: #e1e1e1;
+    --negro: #1F1E1E;
+    --primario: #1073BA;
+    --secundario: #00DA55;
+    --fuente-primaria: "Roboto", sans-serif;
+}
+
+/*Estilos globales*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*Estilos generales*/
+
+body {
+    font-family: var(--fuente-primaria);
+}
+
+h1 {
+    font-size: 10rem;
+}
+
+h2 {
+ font-size: 3.5rem;
+ font-weight: bold;
+}
+
+h3 {
+     font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--primario);
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/*Utilidades*/
+
+.text-center {
+    text-align: center;
+}
+
+.color-b {
+    color: var(--negro);
+}
+
+.color-w {
+    color: var(--blanco);
+}
