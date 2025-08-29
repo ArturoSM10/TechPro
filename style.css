@@ -43,6 +43,10 @@ p {
     font-size: 1.5rem;
 }
 
+img {
+    width: 100%;
+}
+
 /*Utilidades*/
 
 .text-center {
@@ -56,3 +60,42 @@ p {
 .color-w {
     color: var(--blanco);
 }
+
+/*Estilos header*/
+
+.header {
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 15rem 1.5rem;
+}
+
+.header__div {
+    padding-top: 5rem;
+}
+
+.header__p--big {
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0 auto;
+}
+
+.header__h1 {
+    font-size: 6rem;
+    background: linear-gradient(to right, var(--primario) 0%, var(--secundario) 100%);
+    color: transparent;
+    background-clip: text;
+    font-weight: 900;
+    margin: 0;
+}
+
+.header__p {
+    line-height: 1.5;
+}
+
+.header__span {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+/*Media Queries* 768px/
