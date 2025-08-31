@@ -36,7 +36,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     color: var(--primario);
 }
@@ -100,6 +100,27 @@ img {
     font-weight: 900;
 }
 
+.caracteristicas {
+    max-width: 120rem;
+    width: 90%;
+    background-color: var(--blanco);
+    padding: 5rem 0;
+    margin: 0 auto;
+}
+
+.card {
+    margin-bottom: 2.5rem;
+}
+
+.card__img {
+    width: 5rem;
+}
+
+.card__p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
 /*Media Queries* 768px*/
 
 @media (min-width: 768px) {
@@ -134,6 +155,12 @@ img {
 
     .header__span {
         font-size: 6rem;
+    }
+
+    .caracteristicas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }
 
