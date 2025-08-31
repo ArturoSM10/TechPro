@@ -112,6 +112,10 @@ img {
     margin-bottom: 2.5rem;
 }
 
+.card:last-of-type {
+    margin-bottom: 0;
+}
+
 .card__img {
     width: 5rem;
 }
