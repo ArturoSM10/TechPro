@@ -125,6 +125,41 @@ img {
     line-height: 1.5;
 }
 
+.sobre-nosotros {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0), url(./img/imagen-mujer.webp);
+    background-position: right;
+    background-repeat: repeat, no-repeat;
+    background-size: 100%, 110rem;
+}
+
+.sobre-nosotros__container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: repeat(2, 40rem);
+    row-gap: 5rem;
+}
+
+.sobre-nosotros__info {
+    grid-row: 2/3;
+    color: var(--blanco);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5rem;
+}
+
+.sobre-nosotros__h2 {
+    font-size: 4rem;
+}
+
+.sobre-nosotros__p {
+    font-size: 2rem;
+}
+
 /*Media Queries* 768px*/
 
 @media (min-width: 768px) {
@@ -165,6 +200,30 @@ img {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+    }
+
+    .sobre-nosotros {
+        background-image: linear-gradient(to right, var(--primario) 50%, transparent 0), url(./img/imagen-mujer.webp);
+        background-size: cover;
+    }
+
+    .sobre-nosotros__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: none;
+        row-gap: 0;
+        column-gap: 4rem;
+        padding: 10rem 0;
+    }
+
+    .sobre-nosotros__info {
+        grid-column: 1/2;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .sobre-nosotros__p {
+        line-height: 2;
     }
 }
 
