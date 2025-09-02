@@ -166,7 +166,7 @@ img {
     margin-top: 3rem;
 }
 
-.card {
+.card-precios {
     color: var(--primario);
     background-image: url(./img/modelo-z.svg);
     background-color: var(--gris);
@@ -200,7 +200,7 @@ img {
     background-color: var(--primario);
 }
 
-.card__title {
+.card-precios__title {
     font-size: 2.5rem;
     text-transform: none;
 }
@@ -209,7 +209,7 @@ img {
     color: var(--blanco);
 }
 
-.card__p {
+.card-precios__p {
     font-size: 4rem;
     font-weight: 900;
     line-height: 0;
