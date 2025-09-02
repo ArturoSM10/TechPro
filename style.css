@@ -102,7 +102,8 @@ img {
 }
 
 .caracteristicas,
-.precios {
+.precios,
+.newsletter__info {
     max-width: 120rem;
     width: 90%;
     background-color: var(--blanco);
@@ -122,7 +123,8 @@ img {
     width: 5rem;
 }
 
-.card__p {
+.card__p,
+.newsletter__p {
     font-size: 1.6rem;
     line-height: 1.5;
 }
@@ -220,6 +222,43 @@ img {
     font-size: 6rem;
 }
 
+.newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%), url(./img/newsletter.avif);
+    background-position: top center;
+    background-size: 100%, 70rem;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5rem;
+
+    margin-top: 5rem;
+}
+
+.newsletter__info {
+    grid-row: 2/3;
+    padding: 0;
+}
+
+.form__input,
+.form__btn {
+    width: 100%;
+}
+
+.form__input {
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.form__btn {
+    background-color: var(--primario);
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    border: none;
+    padding: 2rem;
+}
 
 /*Media Queries* 768px*/
 
@@ -285,6 +324,25 @@ img {
 
     .sobre-nosotros__p {
         line-height: 2;
+    }
+
+    .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--blanco) 0%), url(./img/newsletter.avif);
+        background-position: center, -21rem 0rem;
+        background-size: 100%, 100rem;
+        padding: 10rem 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: none;
+        row-gap: 0;
+    }
+    .newsletter__info {
+        grid-column: 2/3;
+    }
+
+    .newsletter__h2 {
+        line-height: 1.5;
+        font-size: 3.6rem;
+        font-weight: 900;
     }
 }
 
